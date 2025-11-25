@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Allen Dela Cruz - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./resources/css/app.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Mark's Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="./public/images/meow.jpg" alt="Mark Allen Dela Cruz" class="profile-img">
+                <h1>Mark Allen Dela Cruz</h1>
+                <p>Frontend Developer & UI/UX Designer</p>
+                <a href="#contact" class="btn">Get In Touch</a>
+                <div>
+                    <input type="button" value="Resume.pdf" class="download-btn" onclick="downloadResume()">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello! I'm Mark Allen Dela Cruz</h3>
+                    <p>I'm a passionate frontend developer with over 5 years of experience creating beautiful and functional web experiences. My expertise includes HTML, CSS, JavaScript, and modern frameworks like React and Vue.</p>
+                    <p>I believe in writing clean, efficient code and creating intuitive user interfaces that solve real problems. When I'm not coding, you can find me hiking, reading, or experimenting with new design tools.</p>
+                    <p>I'm constantly learning and keeping up with the latest web technologies to deliver cutting-edge solutions for my clients and employers.</p>
+                </div>
+                <div class="skills">
+                    <div class="skill">HTML5</div>
+                    <div class="skill">CSS3</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">React</div>
+                    <div class="skill">Vue.js</div>
+                    <div class="skill">UI/UX Design</div>
+                    <div class="skill">Responsive Design</div>
+                    <div class="skill">Git</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <p>Check out some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Project 1" class="project-img">
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>A fully responsive e-commerce platform built with React and Node.js. Features include user authentication, product filtering, and payment processing.</p>
+                        <input type="button" value="Download" class="btn" onclick="showProjectDetails('E-Commerce Website')">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Project 2" class="project-img">
+                    <div class="project-info">
+                        <h3>Travel Blog Platform</h3>
+                        <p>A travel blog with interactive maps, photo galleries, and comment system. Built with Vue.js and Firebase for backend services.</p>
+                        <input type="button" value="Download" class="btn" onclick="showProjectDetails('Travel Blog Platform')">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Project 2" class="project-img">
+                    <div class="project-info">
+                        <h3>Calculator App</h3>
+                        <p>A basic calculator using C# VB.NET</p>
+                        <input type="button" value="Download" class="btn" onclick="showProjectDetails('Calculator APP')">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Project 2" class="project-img">
+                    <div class="project-info">
+                        <h3>Notepad App</h3>
+                        <p>A basic CRUD</p>
+                        <input type="button" value="Download" class="btn" onclick="showProjectDetails('Notepad App')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Get in touch for opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Talk</h3>
+                    <p>I'm currently available for freelance work and full-time opportunities. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Roxas City, Philippines</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>mark.delacruz@example.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+63 912 345 6789</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <input type="submit" value="Send Message" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <p>&copy; 2023 Mark Allen Dela Cruz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./resources/js/main.js"></script>
+</body>
+</html>
